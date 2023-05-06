@@ -7,6 +7,6 @@ services:
       - 8080:5173
     volumes:
       - ./:/usr/src:cached
-      - node-node_modules_data:/usr/src/node_modules:delegated
+      - node_modules_data:/usr/src/node_modules:delegated
 volumes:
   node_modules_data:
