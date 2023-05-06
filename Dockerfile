@@ -1,6 +1,6 @@
 FROM node:18.16.0-slim
 
-WORKDIR /usr/src
+WORKDIR /usr/src/app/frontend
 
 COPY yarn.lock ./
 COPY package.json ./

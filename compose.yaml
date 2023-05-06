@@ -6,7 +6,7 @@ services:
     ports:
       - 8080:5173
     volumes:
-      - ./:/usr/src:cached
-      - node_modules_data:/usr/src/node_modules:delegated
+      - ./:/usr/src/app/frontend:cached
+      - node_modules_data:/usr/src/app/frontend/node_modules:delegated
 volumes:
   node_modules_data:
