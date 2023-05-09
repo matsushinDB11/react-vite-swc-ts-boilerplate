@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  frontend:
+    build: .
+    ports:
+      - 8080:5173
+    volumes:
+      - ./:/usr/src/app/frontend:cached
+      - node_modules_data:/usr/src/app/frontend/node_modules:delegated
+volumes:
+  node_modules_data:

@@ -1,0 +1,47 @@
+{
+    "name": "react dev container",
+    "dockerComposeFile": "./compose.yaml",
+    "service": "frontend",
+    "workspaceFolder": "/usr/src/app/frontend",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "editor.defaultFormatter": "esbenp.prettier-vscode",
+                "editor.codeActionsOnSave": {
+                    "source.fixAll.eslint": true
+                },
+                "[graphql]": {
+                    "editor.formatOnSave": true
+                  },
+                  "[javascript]": {
+                    "editor.formatOnSave": true
+                  },
+                  "[javascriptreact]": {
+                    "editor.formatOnSave": true
+                  },
+                  "[json]": {
+                    "editor.formatOnSave": true
+                  },
+                  "[typescript]": {
+                    "editor.formatOnSave": true
+                  },
+                  "[typescriptreact]": {
+                    "editor.formatOnSave": true
+                  },
+                "eslint.packageManager": "yarn",
+                "typescript.enablePromptUseWorkspaceTsdk": true
+            },
+            "extensions": [
+				"ms-vsliveshare.vsliveshare",
+				"dbaeumer.vscode-eslint",
+				"esbenp.prettier-vscode",
+				"eamodio.gitlens",
+				"VisualStudioExptTeam.vscodeintellicode",
+				"christian-kohler.path-intellisense",
+				"streetsidesoftware.code-spell-checker",
+				"stylelint.vscode-stylelint",
+				"ms-azuretools.vscode-docker"
+			]
+        }
+    }
+}

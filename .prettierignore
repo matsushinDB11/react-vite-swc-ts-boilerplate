@@ -1,0 +1,6 @@
+vite.config.ts
+tsconfig*.json
+package.json
+.eslintrc.cjs
+node_modules/
+dist/
